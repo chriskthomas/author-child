@@ -1,0 +1,33 @@
+.search {
+
+  .archive-header {
+
+    .post-title {
+      margin-bottom: 24px;
+    }
+  }
+  .search-bottom {
+    padding-bottom: $baseline-height * 2;
+
+    p {
+      margin-bottom: $baseline-height;
+    }
+  }
+  .sticky-status {
+    display: none;
+  }
+}
+
+@media all and (min-width: $five-fifty) {
+
+  .search {
+
+    .archive-header {
+
+      h1 {
+        font-size: 1.75em; /* 28px / 16px */
+        line-height: 1.321; /* 37px */
+      }
+    }
+  }
+}

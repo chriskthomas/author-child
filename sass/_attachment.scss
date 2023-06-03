@@ -1,0 +1,24 @@
+.singular-attachment {
+
+  .entry {
+
+    .attachment {
+      text-align: center;
+    }
+    .further-reading {
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .attachment-container {
+
+    img {
+      display: block;
+    }
+  }
+  .attachment-caption {
+    @extend %twelve-pixels;
+  }
+}

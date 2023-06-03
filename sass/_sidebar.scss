@@ -1,0 +1,62 @@
+.main-sidebar {
+  transform: translate3d(0px,0px,0px);
+  position: relative;
+  padding: $baseline-height $column-27 * 2;
+  background: $color-gray-17-blue;
+  color: white;
+}
+// widget container
+.sidebar-primary {
+  max-height: 0;
+  overflow: hidden;
+}
+// menu open
+.open .sidebar-primary {
+  max-height: 9999px;
+}
+
+// 550px
+@media all and (min-width: $five-fifty) {
+
+  .sidebar-primary {
+    position: absolute;
+    width: 320px;
+    left: 0;
+    padding: 0 $column-27 * 2 * 1.174;
+  }
+}
+
+// 950px
+@media all and (min-width: $nine-fifty) {
+
+  .main-sidebar {
+    float: left;
+    width: $column-9 * 2.5;
+    padding: $baseline-height * 2 $column-27 / 2;
+    min-height: 100%;
+  }
+  .sidebar-primary {
+    position: relative;
+    max-height: none; // allow menu items to be seen w/o toggling
+    width: auto;
+    padding: 0;
+  }
+}
+
+// 1150px
+@media all and (min-width: $eleven-fifty) {
+
+  .main-sidebar {
+//    width: $column-9 * 2;
+    width: 22.23%; // increased from 22.22% to remove occasional 1px gap between sidebar and main
+  }
+}
+
+// 1400px
+@media all and (min-width: $fourteen-hundred) {
+
+  .main-sidebar {
+    padding: 3em 26px;
+    max-width: 311px;
+  }
+}

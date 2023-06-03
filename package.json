@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "dart-sass sass/style.scss:style.css",
+    "dev": "dart-sass --watch sass/style.scss:style.css"
+  },
+  "dependencies": {
+    "dart-sass": "^1.25.0"
+  }
+}

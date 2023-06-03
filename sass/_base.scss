@@ -1,0 +1,444 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font-stack;
+  line-height: 1.5;
+  background: $color-gray-17-blue;
+  color: $color-gray-17-blue;
+  -webkit-font-smoothing: subpixel-antialiased;
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+}
+.overflow-container {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  min-height: 100%;
+}
+.max-width {
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+.main {
+  position: relative;
+  margin: 0 auto;
+  background: $color-gray-95-blue;
+  padding: $baseline-height 0;
+  min-height: 100vh;
+  // 36px footer + 84px sidebar up top
+  min-height: calc(100vh - 120px);
+}
+.admin-bar {
+
+  .main {
+    // 36px footer + 46px admin bar + 84px sidebar up top
+    min-height: calc(100vh - 166px);
+  }
+}
+@media all and (min-width: 782px) {
+
+  .admin-bar {
+
+    .main {
+      // 36px footer + 32px admin bar + 84px sidebar up top
+      min-height: calc(100vh - 152px);
+    }
+  }
+}
+@media all and (min-width: $nine-fifty) {
+
+  .main {
+    // just the footer
+    min-height: calc(100vh - 36px);
+  }
+  .admin-bar {
+
+    .main {
+      // 36px footer + 32px admin bar
+      min-height: calc(100vh - 68px);
+    }
+  }
+}
+
+p {
+  margin: $baseline-height 0;
+}
+a {
+  color: $color-gray-17-blue;
+  transition: color 0.2s ease-in-out;
+
+  &:link,
+  &:visited {
+    color: $color-gray-17-blue;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-gray-40-blue;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $secondary-font-stack;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+h1 {
+  @extend %thirty-seven-pixels;
+}
+h2 {
+  @extend %twenty-eight-pixels;
+}
+h3 {
+  @extend  %twenty-one-pixels;
+}
+h4, h5, h6 {
+  font-size: 1em;
+  line-height: 1.5;
+}
+ul,
+ol {
+  font-size: 1em;
+  padding: 0;
+  margin: $baseline-height;
+
+  ul,ol {
+    margin: 0 $baseline-height;
+  }
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul,
+li li {
+  font-size: 1em;
+}
+
+/* Markup styles */
+
+pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  background: $color-gray-95-blue;
+  padding: $baseline-height / 2;
+}
+code {
+  background: $color-gray-95-blue;
+  padding: 0 $baseline-height / 4;
+}
+pre code {
+  padding: 0;
+}
+blockquote {
+  margin: $baseline-height $baseline-height $baseline-height 0;
+  padding-left: $baseline-height;
+  border-left: solid 3px $color-gray-17-blue;
+
+  cite {
+    display: block;
+    text-align: right;
+  }
+}
+hr {
+  margin: $baseline-height * 0.46 0;
+}
+/* Table styles */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: $baseline-height 0;
+}
+td {
+  padding: 0.5em 0.75em;
+  border: solid 1px $color-gray-85;
+}
+th {
+  padding: 0.5em 0.75em;
+  border: solid 1px $color-gray-85;
+}
+.wp-block-table {
+  margin: 0;
+
+  thead {
+    background: $color-gray-95-blue;
+  }
+  td,
+  th {
+    border-color: $color-gray-85;
+  }
+  figcaption {
+    @extend %twelve-pixels;
+    line-height: 1.5;
+    margin: -18px 0 18px 0;
+    color: $color-gray-40-blue;
+    text-align: center;
+  }
+}
+.wp-block-table.is-style-stripes {
+
+  thead {
+    background: none;
+  }
+  td,
+  th {
+    border-color: $color-gray-85;
+  }
+}
+.wp-block-group.alignwide,
+.wp-block-group .alignwide,
+.wp-block-group.alignfull,
+.wp-block-group .alignfull {
+  line-height: 1.5;
+}
+
+/* Images */
+
+.alignright,
+.alignleft,
+.aligncenter,
+.alignnone,
+.alignwide,
+.alignfull,
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  height: auto;
+  line-height: 0;
+  max-width: 100%;
+
+  // in case there is a containing div given the class
+  img {
+    max-width: 100%;
+  }
+  figcaption {
+    @extend %twelve-pixels;
+    line-height: 1.5;
+    margin: 3px 0 0 0;
+    color: $color-gray-40-blue;
+    text-align: center;
+  }
+}
+.wp-block-image {
+  margin: 0;
+  line-height: 0;
+}
+.wp-block-image figcaption {
+  @extend %twelve-pixels;
+  line-height: 1.5;
+  margin: 3px 0 0 0;
+  color: $color-gray-40-blue;
+}
+.alignleft {
+  float: left;
+  margin: 0 $baseline-height $baseline-height 0;
+}
+.alignright {
+  float: right;
+  margin: 0 0 $baseline-height $baseline-height;
+}
+.aligncenter {
+  text-align: center;
+  margin: $baseline-height auto;
+  display: block;
+  max-width: 100%;
+}
+.alignnone {
+  margin: $baseline-height;
+}
+img {
+  height: auto;
+  line-height: 0;
+}
+.singular-attachment {
+
+  img {
+    max-width: 100%;
+  }
+}
+.wp-caption-text,
+.wp-caption-dd {
+  margin: 3px 0 0 0;
+  @extend %twelve-pixels;
+  color: $color-gray-40-blue;
+}
+.wp-block-social-links a,
+.wp-block-social-links a:link,
+.wp-block-social-links a:visited {
+  color: #fff;
+}
+
+/* Form styles */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  @extend %twelve-pixels;
+  padding: 9px 12px;
+  width: 100%;
+  max-width: $baseline-height * 10 * 1.85;
+  background: $color-gray-95-blue;
+  color: $color-gray-17-blue;
+  outline: solid 1px $color-gray-85;
+  border: none;
+  border-radius: 0;
+  font-family: $primary-font-stack;
+  -webkit-appearance: none;
+
+  &:focus {
+    background: white;
+  }
+}
+textarea {
+  max-width: $baseline-height * 15 * 1.85;
+  overflow: auto; /* to hide scrollbar in IE */
+}
+input[type="submit"] {
+  @extend %twelve-pixels;
+  padding: 0.8em;
+  width: 100%;
+  color: white;
+  background: $color-gray-17-blue;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  max-width: $baseline-height * 5 * 1.85;
+  font-family: $primary-font-stack;
+  -webkit-appearance: none;
+  transition: background 0.2s ease-in-out;
+}
+input[type="submit"] {
+
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+    background: $color-gray-40-blue;
+  }
+}
+input[type="search"] {
+  margin-right: 2px;
+  padding-right: $baseline-height / 4; /* so safari 'x' doesn't get cut off */
+  transition: background 0.2s ease-in-out;
+}
+::-webkit-input-placeholder {
+  color: $color-gray-40-blue;
+}
+:-moz-placeholder /* Firefox 18- */ {
+  color: $color-gray-40-blue;
+}
+::-moz-placeholder /* Firefox 19+ */ {
+  color: $color-gray-40-blue;
+}
+:-ms-input-placeholder {
+  color: $color-gray-40-blue;
+}
+
+/* ie image border fix */
+a img {
+  border: none;
+}
+
+// hiding screen reader text
+.screen-reader-text {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+}
+.skip-content {
+  position: absolute;
+  top: -$baseline-height * 3;
+  width: 100%;
+  left: 0;
+  display: block;
+  text-align: center;
+  color: white;
+  z-index: 99;
+  padding: $baseline-height;
+  background: $color-gray-17-blue;
+  transition: top 0.2s ease;
+
+  &:link,
+  &:visited {
+    color: white;
+  }
+  &:focus {
+    top: 0;
+    outline: none;
+  }
+}
+.admin-bar {
+
+  .skip-content:focus {
+    top: 32px;
+  }
+}
+
+#breadcrumbs {
+  margin-top: 0;
+  padding: 0 $column-27 * 2;
+}
+.singular #breadcrumbs {
+  margin-bottom: $baseline-height * 2;
+}
+@media all and (min-width: 34.375em) {
+
+  #breadcrumbs {
+    padding: 0;
+  }
+  .singular #breadcrumbs {
+    margin-bottom: $baseline-height;
+  }
+}
+// stop iphone from zooming in on landscape view
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape)
+{
+  html {
+    -webkit-text-size-adjust: none;   /* none for no scaling */
+  }
+}
+
+// stop ipad from zooming in on landscape view
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)
+{
+  html {
+    -webkit-text-size-adjust: none;   /* none for no scaling */
+  }
+}
+
+// 1400px
+@media all and (min-width: $fourteen-hundred) {
+
+  // keep right of main light gray color
+  body {
+
+    &:before {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: 0;
+      background: $color-gray-95-blue;
+    }
+  }
+}

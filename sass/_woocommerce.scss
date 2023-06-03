@@ -1,0 +1,238 @@
+.woocommerce {
+
+  .entry {
+    padding: $baseline-height $column-27 * 2;
+    background: white;
+  }
+  a {
+    border-bottom: none;
+  }
+  .product {
+
+    .quantity .qty {
+      width: 50px !important;
+      font-size: 16px !important;
+      padding: 11px 6px 11px 12px !important;
+    }
+    .single_add_to_cart_button {
+      line-height: 1.5;
+      padding: 12px 24px;
+    }
+  }
+  .product_meta {
+
+    a {
+      text-decoration: underline;
+    }
+  }
+  .woocommerce-review-link {
+    text-decoration: underline;
+  }
+  .woocommerce-Reviews-title,
+  .related h2,
+  .upsells h2 {
+    margin-bottom: 24px;
+  }
+  .comment-reply-title {
+    display: block;
+    margin-bottom: 12px;
+    color: $color-gray-17-blue;
+    font-weight: 700;
+  }
+  .comment-respond {
+    box-shadow: none;
+  }
+  .woocommerce-loop-product__title,
+  .price {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+  .add_to_cart_button {
+    display: block !important;
+    text-align: center;
+    border-radius: 0 0 3px 3px !important;
+  }
+  .added_to_cart {
+    display: block !important;
+    text-align: center;
+  }
+}
+.woocommerce-cart,
+.woocommerce-checkout,
+.woocommerce-page {
+
+  th,td {
+    border: none;
+  }
+  h2,
+  h3 {
+    margin-bottom: 24px;
+  }
+}
+.woocommerce-cart {
+
+  .quantity input {
+    width: 50px !important;
+    font-size: 14px !important;
+    padding: 8px 4px !important;
+  }
+  .coupon input {
+    max-width: none !important;
+    width: 49% !important;
+    padding: 10px 12px;
+  }
+  .coupon input[type="text"] {
+    font-size: 14px !important;
+    padding: 7px 12px 8px !important;;
+  }
+  table.shop_table td.product-name {
+    padding: 24px 12px;
+  }
+  table.shop_table .actions {
+    padding: 12px;
+  }
+  .post-content a.remove {
+    text-decoration: none;
+  }
+  .post-content .checkout-button {
+    text-decoration: none;
+  }
+}
+.woocommerce-checkout {
+
+  input {
+    max-width: none;
+  }
+  .required {
+    text-decoration: none;
+  }
+  #customer_details {
+    margin-bottom: 24px;
+  }
+}
+.woocommerce .col2-set .col-1, 
+.woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2, 
+.woocommerce-page .col2-set .col-2 {
+  width: auto;
+  float: none;
+}
+.woocommerce .col-2 {
+  margin-top: $baseline-height;
+}
+.woocommerce-account {
+
+  .woocommerce {
+    position: relative;
+    border: solid 1px $color-gray-95-blue;
+    border-radius: 6px;
+    min-height: 260px;
+  }
+  .woocommerce-MyAccount-navigation {
+    background: $color-gray-95-blue;
+    padding: $baseline-height;
+
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 12px;
+
+      &.is-active {
+
+        a {
+          text-decoration: underline;
+        }
+      }
+      a {
+        @extend %twelve-pixels;
+        @extend %uppercase;
+        text-decoration: none;
+        font-weight: 800;
+
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .woocommerce-MyAccount-content {
+    padding: $baseline-height;
+
+    > p:first-child {
+      margin-top: 0;
+    }
+    fieldset {
+      margin: $baseline-height 0;
+    }
+    .woocommerce-address-fields .button {
+      margin-top: 18px;
+    }
+    .button {
+      text-decoration: none;
+    }
+  }
+  .woocommerce-message {
+    z-index: 9;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    top: -26px;
+  }
+  .col-2.woocommerce-Address {
+    margin-top: $baseline-height;
+  }
+}
+.woocommerce form .form-row .required {
+  text-decoration: none;
+}
+
+// 550px
+@media all and (min-width: $five-fifty) {
+
+  .woocommerce {
+
+    .entry {
+      box-shadow: $box-shadow;
+    }
+  }
+}
+
+@media all and (min-width: 769px) {
+
+  .woocommerce-account {
+
+    .woocommerce-MyAccount-navigation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+    .col-2.woocommerce-Address {
+      margin-top: 0;
+    }
+  }
+}
+// 950px
+@media all and (min-width: $nine-fifty) {
+
+  .woocommerce {
+    padding: 0;
+
+    .entry {
+      padding: $baseline-height $column-9 * 0.75 * 1.636;
+    }
+  }
+}
+
+// 1150px
+@media all and (min-width: $eleven-fifty) {
+
+  .woocommerce {
+
+    .entry {
+      padding: $baseline-height $column-9 * 0.5 * 1.8;
+    }
+  }
+}

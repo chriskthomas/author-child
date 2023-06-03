@@ -1,0 +1,39 @@
+// 550px
+@media all and (min-width: $five-fifty) {
+
+  .main {
+    padding: $baseline-height $column-27 * 2;
+  }
+  .open ~ .main {
+    transform: translateX(320px);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: $color-gray-17-blue;
+      opacity: 0.3;
+    }
+  }
+}
+
+// 950px
+@media all and (min-width: $nine-fifty) {
+
+  .main {
+    float: right;
+    padding: $baseline-height * 2 $column-9 / 2;
+    width: $column-9 * 6.5;
+  }
+}
+// 1150px
+@media all and (min-width: $eleven-fifty) {
+
+  .main {
+    width: $column-9 * 7;
+    padding: $baseline-height * 2 $column-9 * 1.5 $baseline-height * 2 $column-9 / 2;
+  }
+}

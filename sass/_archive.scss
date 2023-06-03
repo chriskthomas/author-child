@@ -1,0 +1,121 @@
+.archive-header,
+.pagination {
+  padding: $baseline-height $column-27 * 2;
+  margin-bottom: $baseline-height;
+  background: white;
+  text-align: center;
+
+  h1 {
+    @extend %twenty-one-pixels;
+    display: inline-block;
+    margin-left: 6px;
+  }
+}
+.archive-header {
+
+  p {
+    margin: $baseline-height / 2 0 0;
+  }
+}
+.more-link-wrapper {
+  text-align: center;
+}
+.comments-link {
+  display: block;
+  text-align: center;
+  margin-top: $baseline-height;
+
+  i {
+    padding-right: 6px;
+  }
+  a {
+    padding: 8px 16px;
+    border: solid 1px $color-gray-14-blue;
+
+    text-decoration: none;
+  }
+}
+.pagination {
+  position: relative;
+  margin: $baseline-height 0;
+
+  a,
+  span {
+    margin: 0 4px;
+  }
+  .next {
+    position: absolute;
+    right: $column-27 * 2;
+    left: auto;
+  }
+  .prev {
+    position: absolute;
+    left: $column-27 * 2;
+    right: auto;
+  }
+}
+.infinite-scroll .pagination {
+  display: none;
+}
+.sticky-status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 6px 20px;
+  background: $color-gray-17-blue;
+  color: white;
+}
+
+// 1150px
+@media all and (max-width: $eleven-fifty) {
+
+  .blog .sticky:not(.has-post-thumbnail) article {
+    padding-top: $baseline-height * 2;
+  }
+}
+
+// 550px
+@media all and (min-width: $five-fifty) {
+
+  .archive-header,
+  .pagination  {
+    box-shadow: $box-shadow;
+  }
+}
+
+// 950px
+@media all and (min-width: $nine-fifty) {
+
+  .archive-header,
+  .pagination  {
+    padding: $baseline-height $column-9 * 0.75 * 1.636;
+  }
+  .pagination {
+
+    .next {
+      right: $column-9 * 0.75 * 1.636;
+    }
+    .prev {
+      left: $column-9 * 0.75 * 1.636;
+    }
+  }
+}
+
+// 1150px
+@media all and (min-width: $eleven-fifty) {
+
+  .archive-header,
+  .pagination  {
+    padding: $baseline-height $column-9 * 0.5 * 1.8;
+  }
+  .pagination {
+
+    .next {
+      right: $column-9 * 0.5 * 1.8;
+    }
+    .prev {
+      left: $column-9 * 0.5 * 1.8;
+    }
+  }
+}

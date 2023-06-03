@@ -1,0 +1,36 @@
+// Improve spacing under headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.15em;
+}
+
+/* Hide Sidebar Widgets on Mobile */
+@media only screen and (max-width: 34.375em) {
+  #sidebar-primary {
+    display: none;
+  }
+}
+
+/* AP Button */
+.sidebar-primary .widget a.ap-button {
+  display: inline-block;
+  background: $color-gray-80;
+  color: $color-gray-17-blue;
+  text-decoration: none;
+  font: 500 14px/32px sans-serif;
+  border-radius: 4px;
+  padding: 4px 18px 4px 16px;
+}
+
+.sidebar-primary .widget a.ap-button:hover {
+  background: $color-gray-95-blue;
+}
+
+/* Allow AG icon hover */
+.icon g {
+  color: inherit;
+}

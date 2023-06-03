@@ -1,0 +1,85 @@
+.site-footer {
+  position: relative;
+  clear: both;
+
+  .design-credit {
+    @extend %twelve-pixels;
+    padding: $baseline-height / 2 $column-27 * 2;
+    background: $color-gray-85;
+    color: $color-gray-27-blue;
+    text-align: center;
+
+    a {
+      color: $color-gray-27-blue;
+
+      &:link,
+      &:visited,
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-gray-27-blue;
+      }
+    }
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: -45px;
+  right: 0;
+  z-index: 9;
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+  width: 60px;
+  transition: background 0.2s, transform 0.3s;
+
+  &.visible {
+    transform: translateY(-45px);
+  }
+  &:hover {
+    cursor: pointer;
+    background: $color-gray-17-blue;
+
+    i {
+      transform: translateY(-4px);
+    }
+  }
+  i {
+    font-size: 21px;
+    transition: transform 0.2s;
+  }
+}
+
+@media all and (min-width: $nine-fifty) {
+
+  .site-footer {
+    float: right;
+    width: $column-9 * 6.5;
+  }
+}
+
+@media all and (min-width: $eleven-fifty) {
+
+  .site-footer {
+    width: $column-9 * 7;
+  }
+}
+
+@media all and (min-width: $fourteen-hundred) {
+
+  .site-footer {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -999px;
+      bottom: 0;
+      left: 100%;
+      background: $color-gray-85;
+    }
+  }
+}

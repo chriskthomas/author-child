@@ -1,0 +1,29 @@
+.search-form-container {
+
+  input[type="search"] {
+    margin-bottom: 6px;
+    max-width: none !important;
+  }
+  input[type="submit"] {
+    max-width: none;
+  }
+}
+
+// 550px
+@media all and (min-width: $five-fifty) {
+
+  // put search and submit inputs side-by-side (if not in sidebar)
+  .main {
+
+    .search-form-container {
+
+      input[type="search"] {
+        width: 70% !important;
+        margin-bottom: 0;
+      }
+      input[type="submit"] {
+        width: calc(30% - 6px);
+      }
+    }
+  }
+}

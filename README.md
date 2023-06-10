@@ -2,7 +2,18 @@
 
 ![Screenshot of the Author Child theme](screenshot.png)
 
-A child theme of [Author by Compete Themes](https://github.com/BenSibley/Author). This will not work without the [Font Awesome Wordpress Plugin](https://wordpress.org/plugins/font-awesome/) or some other way to load the Font Awesome icons.
+A child theme of [Author by Compete Themes](https://github.com/BenSibley/Author). This only contains a subset of the Font Awesome icons relevant to me. The icons that are loaded can be adjusted in the `build.js` file.
+
+## Building
+
+To build this project, you will need to have [Node.js](https://nodejs.org/en/) installed. Then, run the following commands:
+
+```bash
+# Install dependencies
+npm ci
+# Build the theme
+npm run build
+```
 
 ## SASS Folder
 

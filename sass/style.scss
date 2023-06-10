@@ -22,3 +22,9 @@
 //@import "woocommerce";
 //@import "bbpress";
 @import "child_theme";
+
+// Font Awesome
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+$fa-font-path: "./assets/fonts";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands";

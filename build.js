@@ -4,7 +4,7 @@ const fontawesomeSubset = require("fontawesome-subset").fontawesomeSubset;
 
 fontawesomeSubset(
   {
-    solid: ["bars", "envelope", "phone"],
+    solid: ["bars", "envelope"],
     brands: ["twitter-square", "linkedin", "github-square", "mastodon"],
   },
   "assets/fonts/"

@@ -23,7 +23,7 @@ function my_theme_enqueue_styles()
 */
 
 // Minify CSS
-add_action('wp_enqueue_scripts', 'ckt_minify_css', 20);
+add_action('wp_print_styles', 'ckt_minify_css', 20);
 function ckt_minify_css()
 {
     // Remove parent theme css
@@ -37,7 +37,7 @@ function ckt_minify_css()
 }
 
 // Remove fonts from parent theme
-add_action('wp_enqueue_scripts', 'ckt_remove_parent_styles', 20);
+add_action('wp_print_styles', 'ckt_remove_parent_styles', 20);
 function ckt_remove_parent_styles()
 {
     // Google fonts
@@ -58,4 +58,4 @@ function remove_wp_block_library_css(){
     wp_dequeue_style( 'wp-block-library' );
     wp_dequeue_style( 'wp-block-library-theme' );
 } 
-add_action( 'wp_enqueue_scripts', 'remove_wp_block_library_css', 100 );
+add_action( 'wp_print_styles', 'remove_wp_block_library_css', 100 );

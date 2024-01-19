@@ -29,7 +29,8 @@ function ckt_minify_css()
     // Remove parent theme css
     wp_dequeue_style('ct-author-style');
     // Add child theme css
-    wp_enqueue_style('author-child-style',
+    wp_enqueue_style(
+        'author-child-style',
         get_stylesheet_directory_uri() . '/style.min.css',
         array(),
         wp_get_theme()->get('Version')
@@ -54,8 +55,33 @@ function author_footer_callback()
 add_filter('ct_author_footer_text', 'author_footer_callback');
 
 //Remove Gutenberg Block Library CSS from loading on the frontend
-function remove_wp_block_library_css(){
-    wp_dequeue_style( 'wp-block-library' );
-    wp_dequeue_style( 'wp-block-library-theme' );
-} 
-add_action( 'wp_print_styles', 'remove_wp_block_library_css', 100 );
+function remove_wp_block_library_css()
+{
+    wp_dequeue_style('wp-block-library');
+    wp_dequeue_style('wp-block-library-theme');
+}
+add_action('wp_print_styles', 'remove_wp_block_library_css', 100);
+
+/**
+ * This function will connect wp_mail to your authenticated
+ * SMTP server. This improves reliability of wp_mail, and 
+ * avoids many potential problems.
+ *
+ * For instructions on the use of this script, see:
+ * https://butlerblog.com/easy-smtp-email-wordpress-wp_mail/
+ * 
+ * Values for constants are set in wp-config.php
+ */
+add_action('phpmailer_init', 'send_smtp_email');
+function send_smtp_email($phpmailer)
+{
+    $phpmailer->isSMTP();
+    $phpmailer->Host       = SMTP_HOST;
+    $phpmailer->SMTPAuth   = SMTP_AUTH;
+    $phpmailer->Port       = SMTP_PORT;
+    $phpmailer->Username   = SMTP_USER;
+    $phpmailer->Password   = SMTP_PASS;
+    $phpmailer->SMTPSecure = SMTP_SECURE;
+    $phpmailer->From       = SMTP_FROM;
+    $phpmailer->FromName   = SMTP_NAME;
+}

@@ -85,6 +85,27 @@
   span {
     @extend %twelve-pixels;
   }
+  .comment-link a {
+    font-size: 1em;
+    text-decoration: none;
+    color: $color-gray-17-blue;
+
+    &:link,
+    &:visited,
+    &:active,
+    &:hover,
+    &:focus {
+      color: $color-gray-17-blue;
+    }
+    &:active,
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+    span {
+      font-size: 1em;
+    }
+  }
 }
 .comment-reply-link,
 .comment-edit-link {

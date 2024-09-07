@@ -14,23 +14,3 @@ h6 {
     display: none;
   }
 }
-
-/* AP Button */
-.sidebar-primary .widget a.ap-button {
-  display: inline-block;
-  background: $color-gray-80;
-  color: $color-gray-17-blue;
-  text-decoration: none;
-  font: 500 14px/32px sans-serif;
-  border-radius: 4px;
-  padding: 4px 18px 4px 16px;
-}
-
-.sidebar-primary .widget a.ap-button:hover {
-  background: $color-gray-95-blue;
-}
-
-/* Allow AG icon hover */
-.icon g {
-  color: inherit;
-}

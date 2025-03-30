@@ -20,6 +20,7 @@ body {
   overflow: hidden;
   height: auto;
   min-height: 100%;
+  background: $color-gray-17-blue;
 }
 .max-width {
   max-width: 1400px;
@@ -427,7 +428,7 @@ a img {
 @media all and (min-width: $fourteen-hundred) {
 
   // keep right of main light gray color
-  body {
+  .overflow-container {
 
     &:before {
       content: '';

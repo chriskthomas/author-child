@@ -103,6 +103,7 @@ body {
   overflow: hidden;
   height: auto;
   min-height: 100%;
+  background: #0a181e;
 }
 
 .max-width {
@@ -507,7 +508,7 @@ a img {
   }
 }
 @media all and (min-width: 87.5em) {
-  body:before {
+  .overflow-container:before {
     content: "";
     position: fixed;
     top: 0;

@@ -615,7 +615,7 @@ a img {
   list-style: none;
   margin: 1.5em 0 0;
   padding-top: 1.5em;
-  border-top: solid 1px rgb(37.46, 60.22, 74.59);
+  border-top: solid 1px rgb(95.78, 92.89, 95.65);
 }
 .social-media-icons li {
   display: inline-block;
@@ -661,7 +661,7 @@ a img {
   text-align: center;
   color: white;
   background: none;
-  border: solid 1px rgb(37.46, 60.22, 74.59);
+  border: solid 1px rgb(95.78, 92.89, 95.65);
 }
 .toggle-navigation:focus {
   border-color: rgb(166.4, 161.2, 160);
@@ -790,7 +790,7 @@ a img {
   list-style: none;
   margin: 1.5em 0;
   padding: 1.5em 0 0;
-  border-top: solid 1px rgb(37.46, 60.22, 74.59);
+  border-top: solid 1px rgb(95.78, 92.89, 95.65);
   /* Tier 2 */
 }
 .menu-primary-items ul,
@@ -891,7 +891,7 @@ a img {
   line-height: 1;
   background: none;
   color: white;
-  border: solid 1px rgb(37.46, 60.22, 74.59);
+  border: solid 1px rgb(95.78, 92.89, 95.65);
 }
 .toggle-dropdown:hover, .toggle-dropdown:active, .toggle-dropdown:focus {
   outline: none;
@@ -1479,7 +1479,7 @@ a img {
 }
 .comments-link a {
   padding: 8px 16px;
-  border: solid 1px rgb(37.72, 49.04, 59.38);
+  border: solid 1px #000;
   text-decoration: none;
 }
 
@@ -1579,7 +1579,7 @@ a img {
 
 .sidebar-primary .widget {
   color: rgb(209.2, 202.6, 199);
-  border-top: solid 1px rgb(37.46, 60.22, 74.59);
+  border-top: solid 1px rgb(95.78, 92.89, 95.65);
   padding: 1.5em 1px;
 }
 .sidebar-primary .widget-title {
@@ -1625,7 +1625,7 @@ a img {
   background: white !important;
 }
 .sidebar-primary .widget_search input[type=submit] {
-  background: rgb(37.46, 60.22, 74.59);
+  background: rgb(95.78, 92.89, 95.65);
 }
 .sidebar-primary .widget_search input[type=submit]:hover, .sidebar-primary .widget_search input[type=submit]:focus {
   background: #68b684;
@@ -1652,7 +1652,7 @@ a img {
   margin-bottom: 1em;
 }
 .widget_calendar #today {
-  background: rgb(37.46, 60.22, 74.59);
+  background: rgb(95.78, 92.89, 95.65);
   color: white;
 }
 .widget_calendar td {
@@ -1699,7 +1699,7 @@ a img {
 }
 
 .widget_tag_cloud a {
-  background: rgb(37.46, 60.22, 74.59);
+  background: rgb(95.78, 92.89, 95.65);
   margin-right: 0px;
 }
 
@@ -1714,14 +1714,14 @@ a img {
 .site-footer .design-credit {
   padding: 0.75em 7.4074%;
   background: rgb(219.9, 212.95, 208.75);
-  color: rgb(37.46, 60.22, 74.59);
+  color: rgb(95.78, 92.89, 95.65);
   text-align: center;
 }
 .site-footer .design-credit a {
-  color: rgb(37.46, 60.22, 74.59);
+  color: rgb(95.78, 92.89, 95.65);
 }
 .site-footer .design-credit a:link, .site-footer .design-credit a:visited, .site-footer .design-credit a:hover, .site-footer .design-credit a:active, .site-footer .design-credit a:focus {
-  color: rgb(37.46, 60.22, 74.59);
+  color: rgb(95.78, 92.89, 95.65);
 }
 
 .scroll-to-top {

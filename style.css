@@ -69,10 +69,10 @@ textarea, .wp-caption-text,
 }
 
 .sidebar-primary .widget a {
-  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
+  color: rgb(37.7, 49.9, 60.55);
 }
 .sidebar-primary .widget a:link, .sidebar-primary .widget a:visited {
-  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
+  color: rgb(37.7, 49.9, 60.55);
 }
 .sidebar-primary .widget a:hover, .sidebar-primary .widget a:active, .sidebar-primary .widget a:focus {
   color: white;
@@ -92,7 +92,7 @@ body {
   padding: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
-  color: rgb(9.68, 23.6, 29.52);
+  color: #26252b;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
@@ -103,7 +103,7 @@ body {
   overflow: hidden;
   height: auto;
   min-height: 100%;
-  background: rgb(9.68, 23.6, 29.52);
+  background: #26252b;
 }
 
 .max-width {
@@ -143,11 +143,11 @@ p {
 }
 
 a {
-  color: rgb(9.68, 23.6, 29.52);
+  color: #26252b;
   transition: color 0.2s ease-in-out;
 }
 a:link, a:visited {
-  color: rgb(9.68, 23.6, 29.52);
+  color: #26252b;
 }
 a:hover, a:active, a:focus {
   color: #68b684;
@@ -205,7 +205,7 @@ pre code {
 blockquote {
   margin: 1.5em 1.5em 1.5em 0;
   padding-left: 1.5em;
-  border-left: solid 3px rgb(9.68, 23.6, 29.52);
+  border-left: solid 3px #26252b;
 }
 blockquote cite {
   display: block;
@@ -377,7 +377,7 @@ textarea {
   width: 100%;
   max-width: 27.75em;
   background: #fcf4ee;
-  color: rgb(9.68, 23.6, 29.52);
+  color: #26252b;
   outline: solid 1px rgb(219.6, 225.85, 226.3);
   border: none;
   border-radius: 0;
@@ -404,7 +404,7 @@ input[type=submit] {
   padding: 0.8em;
   width: 100%;
   color: white;
-  background: rgb(9.68, 23.6, 29.52);
+  background: #26252b;
   outline: none;
   border: none;
   border-radius: 0;
@@ -465,7 +465,7 @@ a img {
   color: white;
   z-index: 99;
   padding: 1.5em;
-  background: rgb(9.68, 23.6, 29.52);
+  background: #26252b;
   transition: top 0.2s ease;
 }
 .skip-content:link, .skip-content:visited {
@@ -523,7 +523,7 @@ a img {
   transform: translate3d(0px, 0px, 0px);
   position: relative;
   padding: 1.5em 7.4074%;
-  background: rgb(9.68, 23.6, 29.52);
+  background: #26252b;
   color: white;
 }
 
@@ -615,7 +615,7 @@ a img {
   list-style: none;
   margin: 1.5em 0 0;
   padding-top: 1.5em;
-  border-top: solid 1px rgb(14.4, 49.2, 64);
+  border-top: solid 1px rgb(36.8, 88.6, 113.2);
 }
 .social-media-icons li {
   display: inline-block;
@@ -624,13 +624,13 @@ a img {
 .social-media-icons a {
   display: inline-block;
   vertical-align: middle;
-  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
+  color: rgb(37.7, 49.9, 60.55);
   font-size: 1.5em;
   line-height: 1;
   text-decoration: none;
 }
 .social-media-icons a:link, .social-media-icons a:visited {
-  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
+  color: rgb(37.7, 49.9, 60.55);
 }
 .social-media-icons a:hover, .social-media-icons a:active, .social-media-icons a:focus {
   color: #fff;
@@ -661,7 +661,7 @@ a img {
   text-align: center;
   color: white;
   background: none;
-  border: solid 1px rgb(14.4, 49.2, 64);
+  border: solid 1px rgb(36.8, 88.6, 113.2);
 }
 .toggle-navigation:focus {
   border-color: rgb(165.75, 165.75, 165.75);
@@ -684,7 +684,7 @@ a img {
   }
   .tagline {
     display: block;
-    color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
+    color: rgb(37.7, 49.9, 60.55);
     margin: 0;
   }
   .social-media-icons {
@@ -790,7 +790,7 @@ a img {
   list-style: none;
   margin: 1.5em 0;
   padding: 1.5em 0 0;
-  border-top: solid 1px rgb(14.4, 49.2, 64);
+  border-top: solid 1px rgb(36.8, 88.6, 113.2);
   /* Tier 2 */
 }
 .menu-primary-items ul,
@@ -824,7 +824,7 @@ a img {
 .menu-primary-items .page_item_has_children ul a,
 .menu-unset > ul .menu-item-has-children ul a,
 .menu-unset > ul .page_item_has_children ul a {
-  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
+  color: rgb(37.7, 49.9, 60.55);
 }
 .menu-primary-items .menu-item-has-children ul a:link, .menu-primary-items .menu-item-has-children ul a:visited, .menu-primary-items .menu-item-has-children ul a:hover, .menu-primary-items .menu-item-has-children ul a:active, .menu-primary-items .menu-item-has-children ul a:focus,
 .menu-primary-items .page_item_has_children ul a:link,
@@ -842,7 +842,7 @@ a img {
 .menu-unset > ul .page_item_has_children ul a:hover,
 .menu-unset > ul .page_item_has_children ul a:active,
 .menu-unset > ul .page_item_has_children ul a:focus {
-  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
+  color: rgb(37.7, 49.9, 60.55);
 }
 .menu-primary-items .menu-item-has-children ul ul a,
 .menu-primary-items .page_item_has_children ul ul a,
@@ -891,7 +891,7 @@ a img {
   line-height: 1;
   background: none;
   color: white;
-  border: solid 1px rgb(14.4, 49.2, 64);
+  border: solid 1px rgb(36.8, 88.6, 113.2);
 }
 .toggle-dropdown:hover, .toggle-dropdown:active, .toggle-dropdown:focus {
   outline: none;
@@ -963,7 +963,7 @@ a img {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgb(9.68, 23.6, 29.52);
+    background: #26252b;
     opacity: 0.3;
   }
 }
@@ -1094,7 +1094,7 @@ a img {
   display: inline-block;
   padding: 6px 20px;
   margin: 0 6px 6px 0;
-  background: rgb(9.68, 23.6, 29.52);
+  background: #26252b;
   border-radius: 24px;
   text-decoration: none;
   transition: background 0.2s ease-in-out;
@@ -1341,10 +1341,10 @@ a img {
 .comment-footer .comment-link a {
   font-size: 1em;
   text-decoration: none;
-  color: rgb(9.68, 23.6, 29.52);
+  color: #26252b;
 }
 .comment-footer .comment-link a:link, .comment-footer .comment-link a:visited, .comment-footer .comment-link a:active, .comment-footer .comment-link a:hover, .comment-footer .comment-link a:focus {
-  color: rgb(9.68, 23.6, 29.52);
+  color: #26252b;
 }
 .comment-footer .comment-link a:active, .comment-footer .comment-link a:hover, .comment-footer .comment-link a:focus {
   text-decoration: underline;
@@ -1479,7 +1479,7 @@ a img {
 }
 .comments-link a {
   padding: 8px 16px;
-  border: solid 1px rgb(7.26, 17.7, 22.14);
+  border: solid 1px rgb(36.1, 35.15, 40.85);
   text-decoration: none;
 }
 
@@ -1512,7 +1512,7 @@ a img {
   left: 0;
   z-index: 9;
   padding: 6px 20px;
-  background: rgb(9.68, 23.6, 29.52);
+  background: #26252b;
   color: white;
 }
 
@@ -1578,8 +1578,8 @@ a img {
 }
 
 .sidebar-primary .widget {
-  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
-  border-top: solid 1px rgb(14.4, 49.2, 64);
+  color: rgb(37.7, 49.9, 60.55);
+  border-top: solid 1px rgb(36.8, 88.6, 113.2);
   padding: 1.5em 1px;
 }
 .sidebar-primary .widget-title {
@@ -1625,7 +1625,7 @@ a img {
   background: white !important;
 }
 .sidebar-primary .widget_search input[type=submit] {
-  background: rgb(14.4, 49.2, 64);
+  background: rgb(36.8, 88.6, 113.2);
 }
 .sidebar-primary .widget_search input[type=submit]:hover, .sidebar-primary .widget_search input[type=submit]:focus {
   background: #68b684;
@@ -1652,7 +1652,7 @@ a img {
   margin-bottom: 1em;
 }
 .widget_calendar #today {
-  background: rgb(14.4, 49.2, 64);
+  background: rgb(36.8, 88.6, 113.2);
   color: white;
 }
 .widget_calendar td {
@@ -1699,7 +1699,7 @@ a img {
 }
 
 .widget_tag_cloud a {
-  background: rgb(14.4, 49.2, 64);
+  background: rgb(36.8, 88.6, 113.2);
   margin-right: 0px;
 }
 
@@ -1714,14 +1714,14 @@ a img {
 .site-footer .design-credit {
   padding: 0.75em 7.4074%;
   background: rgb(219.6, 225.85, 226.3);
-  color: rgb(14.4, 49.2, 64);
+  color: rgb(36.8, 88.6, 113.2);
   text-align: center;
 }
 .site-footer .design-credit a {
-  color: rgb(14.4, 49.2, 64);
+  color: rgb(36.8, 88.6, 113.2);
 }
 .site-footer .design-credit a:link, .site-footer .design-credit a:visited, .site-footer .design-credit a:hover, .site-footer .design-credit a:active, .site-footer .design-credit a:focus {
-  color: rgb(14.4, 49.2, 64);
+  color: rgb(36.8, 88.6, 113.2);
 }
 
 .scroll-to-top {
@@ -1741,7 +1741,7 @@ a img {
 }
 .scroll-to-top:hover {
   cursor: pointer;
-  background: rgb(9.68, 23.6, 29.52);
+  background: #26252b;
 }
 .scroll-to-top:hover i {
   transform: translateY(-4px);

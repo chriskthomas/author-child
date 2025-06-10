@@ -19,18 +19,19 @@ $fourteen-hundred: 87.5em;
 
 // Real theme colors
 $cerulean: #247ba0ff;
+$rblack: #26252bff;
 $seashell: #fcf4eeff;
 $mint: #68b684ff;
 
 $color-gray-95-blue: $seashell;
 $color-gray-85: color.mix($seashell, $cerulean, 85%);
-$color-gray-80: color.scale($cerulean, $lightness: 85%);
+$color-gray-80: color.mix($cerulean, $rblack, 15%);
 $color-gray-70: color.mix(white, black, 75%);
 $color-gray-60: color.mix(white, black, 65%);
 $color-gray-40-blue: $mint;
-$color-gray-27-blue: color.scale($cerulean, $lightness: -60%);
-$color-gray-17-blue: color.scale($cerulean, $lightness: -80%, $saturation: -20%);
-$color-gray-14-blue: color.scale($cerulean, $lightness: -85%, $saturation: -20%);
+$color-gray-27-blue: color.mix($cerulean, $rblack, 60%);
+$color-gray-17-blue: $rblack;
+$color-gray-14-blue: color.scale($rblack, $lightness: -5%);
 
 /* Social Media Brand Colors */
 

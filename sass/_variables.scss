@@ -25,7 +25,7 @@ $mint: #68b684ff;
 
 $color-gray-95-blue: $seashell;
 $color-gray-85: color.mix($seashell, $cerulean, 85%);
-$color-gray-80: color.mix($cerulean, $rblack, 15%);
+$color-gray-80: color.scale($cerulean, $lightness: 85%);
 $color-gray-70: color.mix(white, black, 75%);
 $color-gray-60: color.mix(white, black, 65%);
 $color-gray-40-blue: $mint;

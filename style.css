@@ -69,10 +69,10 @@ textarea, .wp-caption-text,
 }
 
 .sidebar-primary .widget a {
-  color: rgb(37.7, 49.9, 60.55);
+  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
 }
 .sidebar-primary .widget a:link, .sidebar-primary .widget a:visited {
-  color: rgb(37.7, 49.9, 60.55);
+  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
 }
 .sidebar-primary .widget a:hover, .sidebar-primary .widget a:active, .sidebar-primary .widget a:focus {
   color: white;
@@ -624,13 +624,13 @@ a img {
 .social-media-icons a {
   display: inline-block;
   vertical-align: middle;
-  color: rgb(37.7, 49.9, 60.55);
+  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
   font-size: 1.5em;
   line-height: 1;
   text-decoration: none;
 }
 .social-media-icons a:link, .social-media-icons a:visited {
-  color: rgb(37.7, 49.9, 60.55);
+  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
 }
 .social-media-icons a:hover, .social-media-icons a:active, .social-media-icons a:focus {
   color: #fff;
@@ -684,7 +684,7 @@ a img {
   }
   .tagline {
     display: block;
-    color: rgb(37.7, 49.9, 60.55);
+    color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
     margin: 0;
   }
   .social-media-icons {
@@ -824,7 +824,7 @@ a img {
 .menu-primary-items .page_item_has_children ul a,
 .menu-unset > ul .menu-item-has-children ul a,
 .menu-unset > ul .page_item_has_children ul a {
-  color: rgb(37.7, 49.9, 60.55);
+  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
 }
 .menu-primary-items .menu-item-has-children ul a:link, .menu-primary-items .menu-item-has-children ul a:visited, .menu-primary-items .menu-item-has-children ul a:hover, .menu-primary-items .menu-item-has-children ul a:active, .menu-primary-items .menu-item-has-children ul a:focus,
 .menu-primary-items .page_item_has_children ul a:link,
@@ -842,7 +842,7 @@ a img {
 .menu-unset > ul .page_item_has_children ul a:hover,
 .menu-unset > ul .page_item_has_children ul a:active,
 .menu-unset > ul .page_item_has_children ul a:focus {
-  color: rgb(37.7, 49.9, 60.55);
+  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
 }
 .menu-primary-items .menu-item-has-children ul ul a,
 .menu-primary-items .page_item_has_children ul ul a,
@@ -1578,7 +1578,7 @@ a img {
 }
 
 .sidebar-primary .widget {
-  color: rgb(37.7, 49.9, 60.55);
+  color: rgb(216.5510204082, 237.4576530612, 246.3489795918);
   border-top: solid 1px rgb(36.8, 88.6, 113.2);
   padding: 1.5em 1px;
 }

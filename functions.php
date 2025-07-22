@@ -54,7 +54,7 @@ function author_footer_callback()
 }
 add_filter('ct_author_footer_text', 'author_footer_callback');
 
-//Remove Gutenberg Block Library CSS from loading on the frontend
+// Remove Gutenberg Block Library CSS from loading on the frontend
 function remove_wp_block_library_css()
 {
     wp_dequeue_style('wp-block-library');
@@ -84,4 +84,13 @@ function send_smtp_email($phpmailer)
     $phpmailer->SMTPSecure = SMTP_SECURE;
     $phpmailer->From       = SMTP_FROM;
     $phpmailer->FromName   = SMTP_NAME;
+}
+
+// 404 on date and author pages
+add_action('template_redirect', 'ckt_archive_404');
+function ckt_archive_404() {
+    if (is_date() || is_author()) {
+        global $wp_query;
+        $wp_query->set_404();
+    }
 }

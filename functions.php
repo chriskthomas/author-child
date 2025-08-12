@@ -50,7 +50,7 @@ function ckt_remove_parent_styles()
 // Customize footer
 function author_footer_callback()
 {
-    return empty(get_option('admin_email', false)) ? get_bloginfo('name') : get_bloginfo('name') . ' | <a href:"mailto:' . get_option('admin_email') . '">' . get_option('admin_email') . '</a>';
+    return empty(get_option('admin_email', false)) ? get_bloginfo('name') : get_bloginfo('name') . ' | <a href="mailto:' . get_option('admin_email') . '">' . get_option('admin_email') . '</a>';
 }
 add_filter('ct_author_footer_text', 'author_footer_callback');
 
